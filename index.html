@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- mi hoja de estilos -->
+    <link rel="stylesheet" href="estilos.css">
+    <!-- linkeando fontawesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- convertir la imagen png del icono en .ico -->
+    <link rel="shortcut icon" href="img/logoFoodcraft.png" type="image/x-icon">
+    <title>FoodCraft - Tu Lugar Saludable</title>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a href="./index.html">
+                <img class="navbar-logo" src="./img/logo.png" alt="#" width="50" </a> <a class="navbar-brand"
+                    href="./index.html">FoodCraft</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./recetas.html">Recetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entrenamiento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <div class="jumbotron p-5">
+        <div class="principal">
+            <h1>Bienvenidos a Foodcraft</h1>
+            <p>Tu lugar saludable</p>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Busca tu receta">
+                <button class="btn btn-primary" type="button">Buscar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Secccion de recetas  -->
+
+    <h2>Las recetas más ricas</h2>
+
+    <div class="recetas container-fluid">
+        <div class="row">
+            <div class="receta1 col-sm-2">
+                <a href="#">
+                    <div class="card" style="width:200x">
+                        <img class="card-img-top" src="./img/imagen1.jpg" alt="Card image">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Pollo a la Plancha</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="receta2 col-sm-2">
+                <a href="#">
+                    <div class="card" style="width:200x">
+                        <img class="card-img-top" src="./img/imagen2.jpg" alt="Card image">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Huevo pasado por agua</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="receta3 col-sm-2">
+                <a href="#">
+                    <div class="card" style="width:200x">
+                        <img class="card-img-top" src="./img/imagen3.jpg" alt="Card image">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Arrollado de pollo</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="receta4 col-sm-2">
+                <a href="#">
+                    <div class="card" style="width:200x">
+                        <img class="card-img-top" src="./img/imagen4.jpg" alt="Card image">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Salteado de vegetales</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="receta5 col-sm-2">
+                <a href="#">
+                    <div class="card" style="width:200x">
+                        <img class="card-img-top" src="./img/imagen5.jpg" alt="Card image">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Pollo a la Plancha</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="receta6 col-sm-2">
+                <a href="#">
+                    <div class="card" style="width:200x">
+                        <img class="card-img-top" src="./img/imagen6.jpg" alt="Card image">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Pollo a la Plancha</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Secccion de entrenamiento  -->
+
+    <h2>Planes de entrenamientos</h2>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/cardio.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/16semanas.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/programa_30_dias.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+    <!-- Secccion de BLOG  -->
+
+    <h2>Ultimas entradas de nuestro Blog</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="./img/abuela_tota.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Los 10 mejores ejercicios caseros</h5>
+                    <p class="card-text">Te enseñamos cuales son los ejercicios para que hagas desde tu casa</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="./img/entreno.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">7 Lugares donde comer rico y sano</h5>
+                    <p class="card-text">Estos son los mejores restos de bs as para que vayas a comer sano y rico</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="./img/documentales.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">10 documentales de Netflix</h5>
+                    <p class="card-text">Te pasamos los 10 mejores documentales sobre alimentacion saludable</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="./img/libros_dieta.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Los mejores libros de recetas y dietas</h5>
+                    <p class="card-text">Te pasamos una amplia lista de libros de recetas </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+
+    <div class="footer p-4 text-white text-center">
+        <div class="redes">
+            <h5>Nuestras redes</h5>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </div>
+        <p>FoodCraft - Todos los derechos Reservados 2024</p>
+    </div>
+
+
+
+    <!-- JS Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

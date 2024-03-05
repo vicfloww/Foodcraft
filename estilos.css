@@ -1,0 +1,157 @@
+/* Importacion de fuentes Google */
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+/* Ajustes globales */
+
+*{
+    font-family: 'Roboto';
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    background-color: #0c0f1c;
+}
+
+h2{
+    color: #fffeff;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Personalizando Navbar */
+
+.navbar-brand{
+    font-family: 'Protest Strike' !important;
+    color: #ff0022 !important;
+}
+
+.navbar{
+    background-color: #0c0f1c !important;
+}
+
+#collapsibleNavbar ul li a {
+    color: #fffeff;
+    font-family: 'Passion One';
+    transition: color 0.3s;
+}
+
+.navbar-logo{
+    padding-right: 10px;
+}
+
+#collapsibleNavbar ul li a:hover {
+    color: #ff0022;
+
+}
+
+/* Jumbo tron */
+
+.jumbotron{
+    height: 300px;
+    width: 100%;
+    background-image: url(./img/imagen_principal.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.jumbotron .principal h1 {
+    text-shadow:#fffeff 10px;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 0px #ff0022;
+}
+
+.jumbotron .principal p{
+    font-size: 20px;
+    text-align: center;
+    text-align: center;
+    text-shadow: 2px 2px 0px #ff0022;
+}
+
+
+.principal{
+    color: #fffeff;
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #0c0f1cbb;
+    border-radius: 10px;
+}
+
+
+/* seccion recetas */
+.recetas{
+    background-color: #0c0f1c;
+    margin-top: 20px;
+
+}
+
+.recetas h4{
+    color: #fffeff;
+
+}
+
+
+/* seccion blob */
+
+.card-body{
+    background-color: #1e233b;
+}
+
+.card-title {
+    color: #fffeff !important;
+}
+
+.card-text {
+    color: #fffeff !important;
+}
+
+/* Footer */
+
+.footer{
+    background-color: #0c0f1c;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .redes h5{
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer .redes{
+    list-style: none;
+}
+
+.footer .redes a {
+    color: #fffeff;
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer .redes a:hover{
+    color: #b6142c;
+    transition: color 0.3s;
+    
+}
+
+.footer a{
+    text-decoration: none;
+    color: #fffeff;
+}
+
+.footer p{
+    padding-top: 10px;
+}
