@@ -1,0 +1,165 @@
+// Importación de fuentes
+@import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+// Variables
+$font-roboto: 'Roboto', sans-serif;
+$font-protest-strike: 'Protest Strike';
+$font-passion-one: 'Passion One';
+$color-background: #0c0f1c;
+$color-text: #fffeff;
+$color-highlight: #ff0022;
+$color-jumbotron-background: rgba(12, 15, 28, 0.73);
+
+// Mixin para sombra de texto
+@mixin text-shadow($color) {
+  text-shadow: $color 10px;
+}
+
+// Estilos globales
+* {
+  font-family: $font-roboto;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: $color-background;
+
+  h2 {
+    color: $color-text;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.navbar-brand {
+  font-family: $font-protest-strike !important;
+  color: $color-highlight !important;
+}
+
+.navbar {
+  background-color: $color-background !important;
+}
+
+#collapsibleNavbar ul li a {
+  color: $color-text;
+  font-family: $font-passion-one;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $color-highlight;
+  }
+}
+
+// Jumbotron
+.jumbotron {
+  height: 250px;
+  width: 100%;
+  background-image: url(./img/imagen_principal.jpg);
+  background-size: cover;
+  background-position: center;
+
+  .principal {
+    h1 {
+      @include text-shadow($color-text);
+      font-size: 30px;
+      text-align: center;
+      text-shadow: 2px 2px 0px $color-highlight;
+    }
+
+    p {
+      font-size: 20px;
+      text-align: center;
+      text-align: center;
+      text-shadow: 2px 2px 0px $color-highlight;
+    }
+  }
+}
+
+.principal, .contacto .formuContacto {
+  color: $color-text;
+  width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  background-color: $color-jumbotron-background;
+  border-radius: 10px;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+//Formu de contacto
+
+.contacto {
+  height: 700px;
+  width: 100%;
+  background-image: url(./img/imagen6.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.recetas {
+  background-color: $color-background;
+  margin-top: 20px;
+
+  h4 {
+    color: $color-text;
+    background: #1e233ba8;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 16px;
+
+  }
+}
+
+
+//ajustes cards
+
+.card-body {
+  background-color: #1e233b;
+}
+
+.card-title, .card-text {
+  color: $color-text !important;
+}
+
+// Footer
+.footer {
+  background-color: $color-background;
+  margin-top: auto;
+  width: 100%;
+
+  .redes {
+    h5 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      font-family: $font-roboto;
+    }
+
+    a {
+      color: $color-text;
+      text-decoration: none;
+      font-size: 18px;
+      font-family: $font-roboto;
+
+      &:hover {
+        color: darken($color-highlight, 20%);
+        transition: color 0.3s;
+      }
+    }
+  }
+
+  p {
+    padding-top: 10px;
+  }
+}
