@@ -9,6 +9,8 @@
 body {
   position: relative;
   min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
   background-color: #0c0f1c;
 }
 body h2 {
@@ -38,7 +40,7 @@ body h2 {
 
 .jumbotron {
   height: 250px;
-  width: 100%;
+  width: 100vw;
   background-image: url(./img/imagen_principal.jpg);
   background-size: cover;
   background-position: center;
@@ -85,6 +87,7 @@ body h2 {
 .recetas {
   background-color: #0c0f1c;
   margin-top: 20px;
+  width: 100vw;
 }
 .recetas h4 {
   color: #fffeff;
